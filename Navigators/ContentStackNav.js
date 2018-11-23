@@ -9,9 +9,12 @@ export default ContentStackNav = createStackNavigator({
             screen:Announcements,
             navigationOptions:{
                 headerTintColor:"white",
-                title: "         Yondu Lounge",
+                title: "               Yondu Lounge",
+                
                 headerStyle:{
-                    backgroundColor:"#00BD57",
+                    backgroundColor:"#FF5A5F",
+                    textAlign:"center",
+                    width:"100%"
                 },
                 headerLeft:
                     <Icon name="ios-menu" size={30} color="white" style={{marginLeft:10}}/>,
@@ -23,20 +26,13 @@ export default ContentStackNav = createStackNavigator({
             screen:AnnouncementsContents,
             navigationOptions:{
                 headerTintColor:"white",
-                title: "     Restaurants Nearby",
-              
+                title: " Announcements",
                 headerStyle:{
-                    backgroundColor:"#00BD57",
-                  
+                    backgroundColor:"#FF5A5F",
                 },
                 headerLeft:
-                
-                    <Icon name="ios-menu" size={30} color="white" style={{marginLeft:10}}/>
-                    
-                   ,
+                    <Icon name="ios-menu" size={30} color="white" style={{marginLeft:10}}/>,
                 headerRight:
-                
                 <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>,
-              
             }}
 })
