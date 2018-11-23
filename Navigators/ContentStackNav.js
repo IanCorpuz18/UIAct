@@ -4,6 +4,7 @@ import {View,Text,StyleSheet, TouchableOpacity} from 'react-native'
 import { createStackNavigator, createMaterialTopTabNavigator, createSwitchNavigator } from 'react-navigation'; 
 import Announcements from '../Screens/Content/DrawerContent/Announcements'
 import AnnouncementsContents from '../Screens/Content/DrawerContent/AnnouncementContent/AnnouncementContent'
+import Announce from '../Screens/Content/DrawerContent/Announce/Announce'
 export default ContentStackNav = createStackNavigator({
         AnnouncementsHome:{
             screen:Announcements,
@@ -34,5 +35,9 @@ export default ContentStackNav = createStackNavigator({
                     <Icon name="ios-menu" size={30} color="white" style={{marginLeft:10}}/>,
                 headerRight:
                 <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>,
-            }}
+            }},
+            Announcing:{
+                screen:Announce,
+              
+            },
 })
