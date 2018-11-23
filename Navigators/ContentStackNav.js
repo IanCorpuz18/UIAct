@@ -9,7 +9,7 @@ export default ContentStackNav = createStackNavigator({
             screen:Announcements,
             navigationOptions:{
                 headerTintColor:"white",
-                title: "     Yondu Lounge",
+                title: "         Yondu Lounge",
                 headerStyle:{
                     backgroundColor:"#00BD57",
                 },
