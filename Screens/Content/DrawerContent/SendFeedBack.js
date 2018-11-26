@@ -4,7 +4,7 @@ import CustomButton from '../../../Components/Button/Button';
 
    class SendFeedBack extends Component{
        state={
-        language:""
+        Subject:""
        }
      alertHolder=() => {
         Alert.alert(
@@ -26,9 +26,9 @@ import CustomButton from '../../../Components/Button/Button';
         </View>
         <View style={styles.PickerHolder}>
         <Picker
-  selectedValue={this.state.language}
+  selectedValue={this.state.Subject}
   style={styles.PickerStyle}
-  onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
+  onValueChange={(itemValue, itemIndex) => this.setState({Subject: itemValue})}>
   <Picker.Item label="Select Subject" value="java" color="#9A9D9F" />
   <Picker.Item label="Select Subject" value="js" color="#9A9D9F" />
 </Picker>
@@ -39,6 +39,7 @@ import CustomButton from '../../../Components/Button/Button';
     <View style={styles.ButtonHolder}>
     <CustomButton onPress={this.alertHolder}>Submit</CustomButton>
     <CustomButton bgColor={{backgroundColor:"white"}} 
+    onPress={() => this.props.navigation.navigate('Drawer')}
     textColor={{color:"#FF5A5F"}}>
     Cancel</CustomButton>
     </View>

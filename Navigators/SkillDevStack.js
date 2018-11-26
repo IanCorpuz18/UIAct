@@ -8,30 +8,34 @@ import SkillsNextPage from "../Screens/Content/DrawerContent/SkillsContent/SKill
 export default SkillStackNav = createStackNavigator({
         SkillDev:{
                 screen:SkillDev,
-                navigationOptions:{
+                navigationOptions:({navigation}) =>  {
+                    return{ 
                     headerTintColor:"white",
                     title: "              Yondu Lounge",
                     headerStyle:{
                         backgroundColor:"#FF5A5F",
                     },
                     headerLeft:
-                        <Icon name="ios-menu" size={30} color="white" style={{marginLeft:10}}/>,
+                        <Icon name="ios-menu" onPress={() => navigation.openDrawer()}
+                        size={30} color="white" style={{marginLeft:10}}/>,
                     headerRight:
                     <Icon name="ios-notifications" size={30} color="white" style={{marginRight:10}}/>,
-                }},
+                }}},
                 SkillsNextPage:{
                     screen:SkillsNextPage,
-                    navigationOptions:{
+                    navigationOptions:({navigation}) =>  {
+                        return{ 
                         headerTintColor:"white",
                         title: " Skills Development",
                         headerStyle:{
                             backgroundColor:"#FF5A5F",
                         },
                         headerLeft:
-                            <Icon name="md-arrow-back" size={30} color="white" style={{marginLeft:10}}/>,
+                            <Icon onPress={() => navigation.goBack()}
+                            name="md-arrow-back" size={30} color="white" style={{marginLeft:10}}/>,
                         headerRight:
                         <Icon name="ios-notifications" size={30} color="white" style={{marginRight:10}}/>,
-                    }}
+                    }}}
 
 
 },{

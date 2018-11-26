@@ -76,7 +76,7 @@ import CustomButton from '../../../../Components/Button/Button';
         </Text>
         </View>
         <View style={styles.ButtonHolder}>
-        <CustomButton>Send Feedback</CustomButton>
+        <CustomButton onPress={() => this.props.navigation.navigate('Feedback')} >Send Feedback</CustomButton>
         </View>
     </View>
     )

@@ -1,8 +1,19 @@
 import React, { Component } from 'react'
-import {View,Text,StyleSheet, TextInput} from 'react-native'
+import {View,Text,StyleSheet, TextInput, Alert} from 'react-native'
 import CustomButton from '../../../../Components/Button/Button';
 
    class AnnounceFeedBack extends Component{
+    alertHolder=() => {
+        Alert.alert(
+            'Feedback Sent',
+            'Your feedback has been sent.You will be notified once the recepient replied.',
+            [
+         
+              {text: 'OK', onPress: () => this.props.navigation.navigate('AnnouncementsHome')},
+            ],
+            { cancelable: false }
+          )
+     }
      render(){
     return(
     <View style={styles.Container}>
@@ -21,8 +32,8 @@ import CustomButton from '../../../../Components/Button/Button';
     placeholder="LOREM IPSUM" />
     </View>
     <View style={styles.ButtonHolder}>
-    <CustomButton>Submit</CustomButton>
-    <CustomButton bgColor={{backgroundColor:"white"}} textColor={{color:"#FF5A5F"}}>Cancel</CustomButton>
+    <CustomButton onPress={this.alertHolder}>Submit</CustomButton>
+    <CustomButton onPress={() => this.props.navigation.goBack()} bgColor={{backgroundColor:"white"}} textColor={{color:"#FF5A5F"}}>Cancel</CustomButton>
 </View>
 
     </View>

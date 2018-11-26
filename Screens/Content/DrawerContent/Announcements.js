@@ -12,12 +12,12 @@ class Announcements extends Component {
                 <View style={styles.Body}>
 
                <ScrollView >
-                <Announce />
-                <Announce />
-                <Announce />
-                <Announce/>
-                <Announce />
-                <Announce />
+                <Announce Nav={() => this.props.navigation.navigate('AnnouncementsContents')} />
+                <Announce  Nav={() => this.props.navigation.navigate('AnnouncementsContents')} />
+                <Announce  Nav={() => this.props.navigation.navigate('AnnouncementsContents')} />
+                <Announce Nav={() => this.props.navigation.navigate('AnnouncementsContents')} />
+                <Announce Nav={() => this.props.navigation.navigate('AnnouncementsContents')}  />
+                <Announce Nav={() => this.props.navigation.navigate('AnnouncementsContents')}  />
                 </ScrollView>
                 </View>
                 

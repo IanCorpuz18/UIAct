@@ -15,7 +15,7 @@ import { Announcements } from "./AnnounceItems"
         <View style={styles.AnnouncementTitleHolder}>
         
         {this.state.AnnounceItems.map((item, index) => (
-  <TouchableOpacity key={index} onPress={() => this.props.navigation.navigate('AnnouncementsContents')}>
+  <TouchableOpacity key={index} onPress={this.props.Nav}>
   <Text style={styles.AnnounceTitleText}>{item.AnnounceTitle1}</Text>
   <Text style={styles.AnnounceTitleText}>{item.AnnounceTitle2}</Text>
   <Text style={styles.AnnounceTitleText}>{item.AnnounceTitle3}</Text>

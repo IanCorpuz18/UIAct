@@ -5,9 +5,10 @@ import ContentStackNav from './ContentStackNav'
 import Home from "../Screens/Content/Home"
 import SkillStackNav from './SkillDevStack';
 import HomeStackNav from './HomeStackNav'
+import Drawer from '../Screens/Content/Home'
 export default Switchnavi = createSwitchNavigator({
-  Auth: HomeStackNav
-
+  Auth: HomeStackNav,
+  Drawer:Drawer
 },{
 initialRouteName: 'Auth'
 })

@@ -52,7 +52,7 @@ import CustomButton from '../../../../Components/Button/Button';
         </Text>
         </View>
         <View style={styles.ButtonHolder}>
-        <CustomButton>Join</CustomButton>
+        <CustomButton onPress={() => this.props.navigation.goBack()}>Join</CustomButton>
         
         </View>
     </View>

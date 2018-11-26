@@ -12,12 +12,12 @@ class SkillsDevelopment extends Component {
                 <View style={styles.Body}>
 
                <ScrollView >
-                <SkillsDevContent />
-                <SkillsDevContent />
-                <SkillsDevContent />
-                <SkillsDevContent/>
-                <SkillsDevContent />
-                <SkillsDevContent />
+                <SkillsDevContent  Nav={() => this.props.navigation.navigate('SkillsNextPage')}  />
+                <SkillsDevContent  Nav={() => this.props.navigation.navigate('SkillsNextPage')}  />
+                <SkillsDevContent  Nav={() => this.props.navigation.navigate('SkillsNextPage')}  />
+                <SkillsDevContent  Nav={() => this.props.navigation.navigate('SkillsNextPage')} />
+                <SkillsDevContent  Nav={() => this.props.navigation.navigate('SkillsNextPage')}  />
+                <SkillsDevContent  Nav={() => this.props.navigation.navigate('SkillsNextPage')}  />
                 </ScrollView>
                 </View>
                 

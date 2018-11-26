@@ -5,19 +5,21 @@ import Icon from "react-native-vector-icons/Ionicons"
 import SendFeedback from '../Screens/Content/DrawerContent/SendFeedBack'
 import ContentStackNav from './ContentStackNav'
 export default SendFeedbackNav = createStackNavigator({
-        SkilSendFeedbacklDev:{
+        SkillSendFeedbacklDev: {
                 screen:SendFeedback,
-                navigationOptions:{
+                navigationOptions:({navigation}) =>  {
+                    return{ 
                     headerTintColor:"white",
                     title: "              Yondu Lounge",
                     headerStyle:{
                         backgroundColor:"#FF5A5F",
                     },
                     headerLeft:
-                        <Icon name="ios-menu" size={30} color="white" style={{marginLeft:10}}/>,
+                        <Icon name="ios-menu" onPress={() => navigation.openDrawer()}
+                         size={30} color="white" style={{marginLeft:10}}/>,
                     headerRight:
                     <Icon name="ios-notifications" size={30} color="white" style={{marginRight:10}}/>,
-                }},
+                }}},
             
             
             }

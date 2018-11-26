@@ -15,7 +15,7 @@ import { Skills } from "../SkillsContent/SkillsItems"
         <View style={styles.AnnouncementTitleHolder}>
         
         {this.state.SkillsItems.map((item, index) => (
-  <TouchableOpacity key={index} onPress={() => this.props.navigation.navigate('AnnouncementsContents')}>
+  <TouchableOpacity key={index} onPress={this.props.Nav}>
   <Text style={styles.AnnounceTitleText}>{item.AnnounceTitle1}</Text>
   </TouchableOpacity>
   ))}
