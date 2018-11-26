@@ -32,12 +32,14 @@ export default ContentStackNav = createStackNavigator({
                     backgroundColor:"#FF5A5F",
                 },
                 headerLeft:
-                    <Icon name="ios-menu" size={30} color="white" style={{marginLeft:10}}/>,
+                    <Icon name="md-arrow-back" size={30} color="white" style={{marginLeft:10}}/>,
                 headerRight:
                 <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>,
             }},
-            Announcing:{
-                screen:Announce,
               
-            },
-})
+},
+{
+    initialRouteName:"AnnouncementsContents"
+}
+
+)

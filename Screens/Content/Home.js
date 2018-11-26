@@ -32,14 +32,14 @@ import SkillDevStack from '../../Navigators/SkillDevStack'
         </SafeAreaView>
       )
      const AppDrawerNav = createDrawerNavigator({
-        Home: ContentStackNav,
+        Announcements: ContentStackNav,
         Attendance: Attendance,
-        CompanyPolicies: CompanyPolicies,
-        CompensationBenefits: CompensationBenefits,
-        WorkingCondition: WorkingCondition,
-        SkillsDevelopment: SkillDevStack,
+        'Company Policies': CompanyPolicies,
+        'Compensation Benefits': CompensationBenefits,
+        'Working Condition': WorkingCondition,
+        'Skills Development': SkillDevStack,
         Notifications: Notifications,
-        SendFeedBack: SendFeedBack,
+        'Send FeedBack': SendFeedBack,
         Logout: Logout,
       }, {
           contentComponent: Drawer,

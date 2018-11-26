@@ -7,10 +7,12 @@ import CreateAccount from './Screens/Registration/CreateAccount'
 import AccountConfirmed from './Screens/Registration/AccountConfirmed'
 import Home from './Screens/Content/Home'
 import SwitchNav from './Navigators/SwitchNav'
+import AnnouncementContent from './Screens/Content/DrawerContent/AnnouncementContent/AnnouncementContent'
+import FeedAnnounce from './Screens/Content/DrawerContent/AnnouncementContent/FeedBackAnnounce' 
 export default class App extends Component{
   render() {
     return (
-        <SwitchNav/>
+        <FeedAnnounce/>
   
     );
   }
