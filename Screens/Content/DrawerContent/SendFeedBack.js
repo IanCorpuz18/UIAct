@@ -3,6 +3,7 @@ import {View,Text,StyleSheet, Picker, TextInput,Alert} from 'react-native'
 import CustomButton from '../../../Components/Button/Button';
 
    class SendFeedBack extends Component{
+     
        state={
         Subject:""
        }

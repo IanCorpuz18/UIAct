@@ -52,8 +52,7 @@ export default AppDrawerNav = createDrawerNavigator({
   'Working Condition': WorkingCondition,
   'Skills Development': SkillDevStack,
   Notifications: Notifications,
-  SendFeedBack: SendFeedbackNav
-  
+  // SendFeedBack:SendFeedbackNav
 }, {
     contentComponent: Drawer,
     drawerWidth: Dimensions.get('window').width*.85,
