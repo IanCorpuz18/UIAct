@@ -25,8 +25,10 @@ import LocalImageBottom from "../../Components/LocalImage/LocalImageBottom"
                 </View>
                
                 <View style={styles.ButtonHolder}>
-                <CustomButton>Submit</CustomButton>
-                <CustomButton bgColor={{backgroundColor:"white"}} textColor={{color:"#FF5A5F"}}>Cancel</CustomButton>
+                <CustomButton onPress={() => this.props.navigation.navigate('AccountConfirmed')}
+                >Submit</CustomButton>
+                <CustomButton onPress={() => this.props.navigation.goBack()}
+                 bgColor={{backgroundColor:"white"}} textColor={{color:"#FF5A5F"}}>Cancel</CustomButton>
                 </View>
               
                 <View style={styles.YonduTextHolder}>

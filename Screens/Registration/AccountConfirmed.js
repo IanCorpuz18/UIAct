@@ -27,7 +27,8 @@ import LocalImageBottom from "../../Components/LocalImage/LocalImageBottom"
                 </View> */}
              
                 <View style={styles.ButtonHolder}>
-                <CustomButton>Login Now</CustomButton>
+                <CustomButton onPress={() => this.props.navigation.navigate('Home')}
+                >Login Now</CustomButton>
                 
                 </View>
               

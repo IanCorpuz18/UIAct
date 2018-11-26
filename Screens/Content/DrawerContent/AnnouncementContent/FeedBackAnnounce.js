@@ -6,22 +6,23 @@ import CustomButton from '../../../../Components/Button/Button';
      render(){
     return(
     <View style={styles.Container}>
-    <View style={styles.ContentHoldder}>
+    <View style={styles.ContentHolder}>
         <Text style={styles.ContentText}>Send Feedback</Text>
         </View>
     <View style={styles.TitleHolder}>
     <Text style={styles.Title}>
-    Re: The Yondu Jacket:
-    Keeping you warm...
+    Re: The Yondu Jacket:                          Keeping you warm...
     </Text>
     
     </View>
     <View style={styles.TextInputHolder}>
-    <TextInput style={styles.InputFeedback}/>
+    <TextInput style={styles.InputFeedback} 
+    multiline={true}
+    placeholder="LOREM IPSUM" />
     </View>
     <View style={styles.ButtonHolder}>
     <CustomButton>Submit</CustomButton>
-    <CustomButton>Cancel</CustomButton>
+    <CustomButton bgColor={{backgroundColor:"white"}} textColor={{color:"#FF5A5F"}}>Cancel</CustomButton>
 </View>
 
     </View>
@@ -33,26 +34,40 @@ import CustomButton from '../../../../Components/Button/Button';
         flex:1,
         backgroundColor:"white"
     },
-    ContentHoldder:{
+    ContentHolder:{
         flex:1,
-        backgroundColor:"white"
+        backgroundColor:"white",
+        justifyContent:"center",
+        marginLeft:20,
     },
     ContentText:{
-        fontSize:20
+        fontSize:20,
+        fontWeight:"bold"
     },
     TitleHolder:{
-        flex:1,
-        backgroundColor:"white"
+        flex:1.1,
+        backgroundColor:"white",
+        marginLeft:20,
     },
     Title:{
         fontSize:25,
         fontWeight: 'bold',
     },
     TextInputHolder:{
-        flex:3
+        flex:6, 
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor:"white"
     },
     ButtonHolder:{
-        flex:1
+        flex:2.5,
+        justifyContent: "center",
+    },
+    InputFeedback:{
+        width:"90%",
+        height:"90%",
+        backgroundColor:"#F7F7F7",
+        
     }
     })
 export default AnnounceFeedBack;

@@ -3,10 +3,10 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import ContentStackNav from './ContentStackNav'
 import Home from "../Screens/Content/Home"
-
-
+import SkillStackNav from './SkillDevStack';
+import HomeStackNav from './HomeStackNav'
 export default Switchnavi = createSwitchNavigator({
-  Auth: Home
+  Auth: HomeStackNav
 
 },{
 initialRouteName: 'Auth'

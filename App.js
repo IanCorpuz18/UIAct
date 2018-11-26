@@ -12,7 +12,7 @@ import FeedAnnounce from './Screens/Content/DrawerContent/AnnouncementContent/Fe
 export default class App extends Component{
   render() {
     return (
-        <FeedAnnounce/>
+        <SwitchNav/>
   
     );
   }

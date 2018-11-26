@@ -27,8 +27,9 @@ import LocalImageBottom from "../../Components/LocalImage/LocalImageBottom"
 
                 </View>
                 <View style={styles.ButtonHolder}>
-                <CustomButton>Login</CustomButton>
-                <CustomButton  bgColor={{backgroundColor:"white"}} textColor={{color:"#FF5A5F"}} >Create an Account</CustomButton>
+                <CustomButton onPress={() => this.props.navigation.navigate('Home')}>Login</CustomButton>
+                <CustomButton  onPress={() => this.props.navigation.navigate('CreateAccount')}
+                bgColor={{backgroundColor:"white"}} textColor={{color:"#FF5A5F"}} >Create an Account</CustomButton>
                 </View>
               
                 <View style={styles.YonduTextHolder}>
