@@ -133,7 +133,7 @@ import CustomButton from '../../../../Components/Button/Button';
         color:"#9B9EA0"
     },
     DatePostText:{
-        fontSize:15,
+        fontSize:13,
         marginLeft:5,
         color:"#FF5A5F"
     },

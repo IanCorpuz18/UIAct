@@ -20,8 +20,8 @@ import LocalImageBottom from "../../Components/LocalImage/LocalImageBottom"
                 </View>
                 <View style={styles.TextInputHolder}>
                     <CustomInput placeholder={"Enter Yondu Email"} />
-                    <CustomInput  placeholder={"Password"} />
-                    <CustomInput  placeholder={"Confirm Password"} />
+                    <CustomInput eye={true} placeholder={"Password"} />
+                    <CustomInput eye={true} placeholder={"Confirm Password"} />
                 </View>
                
                 <View style={styles.ButtonHolder}>

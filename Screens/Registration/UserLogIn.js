@@ -19,8 +19,8 @@ import LocalImageBottom from "../../Components/LocalImage/LocalImageBottom"
                     <Text style={styles.UserLoginText}>User Login</Text>
                 </View>
                 <View style={styles.TextInputHolder}>
-                    <CustomInput eye={true} placeholder={"Username"} />
-                    <CustomInput placeholder={"Password"} />
+                    <CustomInput  placeholder={"Username"} />
+                    <CustomInput eye={true} placeholder={"Password"} />
                 </View>
                 <View style={styles.ForgotPassTextHolder}>
                 <Text style={styles.ForgotPassText}>Forgot Password?</Text>
