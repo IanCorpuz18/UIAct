@@ -90,4 +90,3 @@ import CustomButton from '../../../Components/Button/Button';
     },
 
     })
-export default SendFeedBack;

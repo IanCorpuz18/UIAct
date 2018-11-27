@@ -39,7 +39,7 @@ export default ContentStackNav = createStackNavigator({
                     <Icon name="md-arrow-back" onPress={() =>
                          navigation.goBack()} size={30} color="white" style={{marginLeft:10}}/>,
                 headerRight:
-                <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>,
+                <Icon name="ios-notifications" size={30} color="white" style={{marginRight:10}}/>,
             }}},
             
             Feedback:{
@@ -56,7 +56,7 @@ export default ContentStackNav = createStackNavigator({
                           navigation.goBack()}
                         name="md-arrow-back" size={30} color="white" style={{marginLeft:10}}/>,
                     headerRight:
-                    <Icon name="ios-cart" size={30} color="white" style={{marginRight:10}}/>,
+                    <Icon name="ios-notifications" size={30} color="white" style={{marginRight:10}}/>,
                 }}}
               
 },
