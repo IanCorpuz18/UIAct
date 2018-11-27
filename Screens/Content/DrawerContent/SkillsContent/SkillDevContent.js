@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
         color:"gray"
     },
     DatePostText:{
-        fontSize:15,
+        fontSize:13,
         marginLeft:5,
         color:"#FF5A5F"
     },

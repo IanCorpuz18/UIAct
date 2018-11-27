@@ -15,11 +15,12 @@ const styles = StyleSheet.create({
     input:{
         width: "80%",
         padding: 5,
-        margin: 8,
+        margin: 10,
         borderWidth:2,
         borderColor:"#F6F6F5",
         borderRadius: 5,
         backgroundColor: '#F6F6F5',
+       
         
     }
 })

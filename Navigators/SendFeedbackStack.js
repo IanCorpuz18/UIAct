@@ -10,9 +10,10 @@ export default SendFeedbackNav = createStackNavigator({
                 navigationOptions:({navigation}) =>  {
                     return{ 
                     headerTintColor:"white",
-                    title: "              Yondu Lounge",
+                    title: "Yondu Lounge",
                     headerStyle:{
                         backgroundColor:"#FF5A5F",
+                        textAlign:"center"
                     },
                     headerLeft:
                         <Icon name="ios-menu" onPress={() => navigation.openDrawer()}

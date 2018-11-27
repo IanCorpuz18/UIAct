@@ -29,7 +29,7 @@ const Drawer = (props) => (
   </View>
 
   <View style={styles.drawerView}>
-      <DrawerItems {...props} />
+      <DrawerItems style={styles.DrawerText} {...props} />
   </View>
 
   <View style={styles.footView}>
@@ -67,7 +67,7 @@ export default AppDrawerNav = createDrawerNavigator({
 )
 const styles = StyleSheet.create({
 headView:{ 
-flex:.4,
+flex:.5,
   justifyContent:"flex-start",
 borderBottomColor: "#96999A",
 borderBottomWidth: 1,
@@ -83,12 +83,12 @@ borderBottomColor: "#96999A",
 borderBottomWidth: 1,
 },
 footView:{
-flex:1.5,
+flex:1,
 backgroundColor:"white",
 margin: 10,
 },
 footText:{
-fontSize:18,
+fontSize:15,
 color:"#96999A",
 margin: 10,
 }
