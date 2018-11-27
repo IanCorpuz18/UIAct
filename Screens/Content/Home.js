@@ -33,7 +33,7 @@ const Drawer = (props) => (
   </View>
 
   <View style={styles.footView}>
-    <TouchableOpacity onPress={() => props.navigation.navigate('SendFeedBackNav')}>
+    <TouchableOpacity onPress={() => props.navigation.navigate(" ")}>
       <Text style={styles.footText}>Send Feedback</Text>
      
       </TouchableOpacity>
@@ -52,12 +52,13 @@ export default AppDrawerNav = createDrawerNavigator({
   'Working Condition': WorkingCondition,
   'Skills Development': SkillDevStack,
   Notifications: Notifications,
-  // SendFeedBack:SendFeedbackNav
+  " ":SendFeedbackNav
 }, {
     contentComponent: Drawer,
     drawerWidth: Dimensions.get('window').width*.85,
     contentOptions: {
       activeTintColor: '#FF5A5F',
+      activeBackgroundColor:"transparent",
       labelStyle:{
         fontSize:20
       }
